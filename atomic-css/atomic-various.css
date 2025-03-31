@@ -1,0 +1,143 @@
+.fb-relative {
+    position: relative;
+
+    &.fb-top {
+        top: 0;
+    }
+    &.fb-left {
+        left: 0;
+    }
+    &.fb-right {
+        right: 0;
+    }
+    &.fb-bottom {
+        bottom: 0;
+    }
+    &.fb-center {
+      top: 50%;
+      left: 50%;
+      transform: translatex(-50%) translatey(-50%);
+    }
+    &.fb-center-horizontal {
+      left: 50%;
+      transform: translatex(-50%);
+    }
+    &.fb-center-vertical {
+      top: 50%;
+      transform:translatey(-50%);
+    }
+}
+.fb-absolute {
+    position: absolute;
+
+    &.fb-top {
+        top: 0;
+    }
+    &.fb-left {
+        left: 0;
+    }
+    &.fb-right {
+        right: 0;
+    }
+    &.fb-bottom {
+        bottom: 0;
+    }
+    &.fb-center {
+      top: 50%;
+      left: 50%;
+      transform: translatex(-50%) translatey(-50%);
+    }
+    &.fb-center-horizontal {
+      left: 50%;
+      transform: translatex(-50%);
+    }
+    &.fb-center-vertical {
+      top: 50%;
+      transform:translatey(-50%);
+    }
+}
+.fb-flex,
+.fb-inline-flex {
+    &.fb-flex {
+        display: flex;
+    }
+    &.fb-inline-flex {
+        display: inline-flex;
+    }
+    &.fb-flex-direction-unset {
+        flex-direction: unset;
+    }
+    &.fb-center-content {
+        justify-content: center;
+        align-items: center;
+    }
+    &.fb-flex-row {
+        flex-direction: row;
+    }
+    &.fb-flex-row-reverse {
+        flex-direction: row-reverse;
+    }
+    &.fb-flex-column {
+        flex-direction: column;
+    }
+    &.fb-flex-column-reverse {
+        flex-direction: column-reverse;
+    }
+    &.fb-flex-wrap {
+        flex-wrap: wrap;
+    }
+    &.fb-flex-wrap-reverse {
+        flex-wrap: wrap-reverse;
+    }
+    &.fb-flex-wrap-no {
+        flex-wrap: nowrap;
+    }
+    &.fb-flex-wrap-unset {
+        flex-wrap: unset;
+    }
+    &.fb-justify-start {
+        justify-content: flex-start;
+    }
+    &.fb-justify-center {
+        justify-content: center;
+    }
+    &.fb-justify-end {
+        justify-content: flex-end;
+    }
+    &.fb-justify-around {
+        justify-content: space-around;
+    }
+    &.fb-justify-between {
+        justify-content: space-between;
+    }
+    &.fb-justify-evenly {
+        justify-content: space-evenly;
+    }
+    &.fb-align-start {
+        align-items: start;
+    }
+    &.fb-align-center {
+        align-items: center;
+    }
+    &.fb-align-end {
+        align-items: end;
+    }
+}
+.fb-text-left {
+    text-align: left;
+}
+.fb-text-start {
+    text-align: start;
+}
+.fb-text-center {
+    text-align: center;
+}
+.fb-text-right {
+    text-align: right;
+}
+.fb-text-end {
+    text-align: end;
+}
+.fb-text-justify {
+    text-align: justify;
+}

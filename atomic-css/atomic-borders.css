@@ -1,0 +1,710 @@
+.fb-border,
+.fb-border-top,
+.fb-border-right,
+.fb-border-bottom,
+.fb-border-left,
+.fb-border-horizontal,
+.fb-border-vertical {
+    
+    &.fb-border {
+        border: 1px solid black;
+    }
+    &.fb-border-top {
+        border-top: 1px solid black;
+    }
+    &.fb-border-right {
+        border-right: 1px solid black;
+    }
+    &.fb-border-bottom {
+        border-bottom: 1px solid black;
+    }
+    &.fb-border-left {
+        border-left: 1px solid black;
+    }
+    &.fb-border-horizontal {
+        border-left: 1px solid black;
+        border-right: 1px solid black;
+    }
+    &.fb-border-vertical {
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+    }
+    
+    &.fb-border-1 {
+        border-width: 1px;
+    }
+    &.fb-border-2 {
+        border-width: 2px;
+    }
+    &.fb-border-3 {
+        border-width: 3px;
+    }
+    &.fb-border-4 {
+        border-width: 4px;
+    }
+    &.fb-border-5 {
+        border-width: 5px; 
+    }
+    
+    &.fb-border-dotted {
+        border-style: dotted;
+    }
+    &.fb-border-dashed {
+        border-style: dashed;
+    }
+    &.fb-border-solid {
+        border-style: solid;
+    }
+    &.fb-border-double {
+        border-style: double;
+    }
+    &.fb-border-groove {
+        border-style: groove;
+    }
+    &.fb-border-ridge {
+        border-style: ridge;
+    }
+    &.fb-border-inset {
+        border-style: inset;
+    }
+    &.fb-border-outset {
+        border-style: outset;
+    }
+    &.fb-border-none {
+        border-style: none;
+    }
+    &.fb-border-hidden {
+        border-style: hidden;
+    }
+    &.fb-border-white {
+        border-color: white;
+    }
+    &.fb-border-black {
+        border-color: black
+    }
+    &.fb-border-red {
+        border-color: red;
+    }
+    &.fb-border-light-red {
+        border-color: rgb(255, 120, 120);
+    }
+    &.fb-border-yellow {
+        border-color: yellow;
+    }
+    &.fb-border-light-yellow {
+        border-color: lightyellow;
+    }
+    &.fb-border-green {
+        border-color: green;
+    }
+    &.fb-border-light-green {
+        border-color: lightgreen;
+    }
+    &.fb-border-blue {
+        border-color: blue;
+    }
+    &.fb-border-light-blue {
+        border-color: lightblue;
+    }
+    &.fb-border-gray {
+        border-color: gray;
+    }
+    &.fb-border-light-gray {
+        border-color: lightgray;
+    }
+    &.fb-border-grey {
+        border-color: grey;
+    }
+    &.fb-border-light-grey {
+        border-color: lightgrey;
+    }
+
+    /* BORDER TOP */
+    &.fb-border-top-1 {
+        border-top-width: 1px;
+    }
+    &.fb-border-top-2 {
+        border-top-width: 2px;
+    }
+    &.fb-border-top-3 {
+        border-top-width: 3px;
+    }
+    &.fb-border-top-4 {
+        border-top-width: 4px;
+    }
+    &.fb-border-top-5 {
+        border-top-width: 5px;
+    }
+    &.fb-border-top-dotted {
+        border-top-style: dotted;
+    }
+    &.fb-border-top-dashed {
+        border-top-style: dashed;
+    }
+    &.fb-border-top-solid {
+        border-top-style: solid;
+    }
+    &.fb-border-top-double {
+        border-top-style: double;
+    }
+    &.fb-border-top-groove {
+        border-top-style: groove;
+    }
+    &.fb-border-top-ridge {
+        border-top-style: ridge;
+    }
+    &.fb-border-top-inset {
+        border-top-style: inset;
+    }
+    &.fb-border-top-outset {
+        border-top-style: outset;
+    }
+    &.fb-border-top-none {
+        border-top-style: none;
+    }
+    &.fb-border-top-hidden {
+        border-top-style: hidden;
+    }
+    &.fb-border-top-white {
+        border-top-color: white;
+    }
+    &.fb-border-top-black {
+        border-top-color: black;
+    }
+    &.fb-border-top-red {
+        border-top-color: red;
+    }
+    &.fb-border-top-light-red {
+        border-top-color: rgb(255, 120, 120);
+    }
+    &.fb-border-top-yellow {
+        border-top-color: yellow;
+    }
+    &.fb-border-top-light-yellow {
+        border-top-color: lightyellow;
+    }
+    &.fb-border-top-green {
+        border-top-color: green;
+    }
+    &.fb-border-top-light-green {
+        border-top-color: lightgreen;
+    }
+    &.fb-border-top-blue {
+        border-top-color: blue;
+    }
+    &.fb-border-top-light-blue {
+        border-top-color: lightblue;
+    }
+    &.fb-border-top-gray {
+        border-top-color: gray;
+    }
+    &.fb-border-top-light-gray {
+        border-top-color: lightgray;
+    }
+    &.fb-border-top-grey {
+        border-top-color: grey;
+    }
+    &.fb-border-top-light-grey {
+        border-top-color: lightgrey;
+    }
+    /* BORDER RIGHT */
+    &.fb-border-right-1 {
+        border-right-width: 1px;
+    }
+    &.fb-border-right-2 {
+        border-right-width: 2px;
+    }
+    &.fb-border-right-3 {
+        border-right-width: 3px;
+    }
+    &.fb-border-right-4 {
+        border-right-width: 4px;
+    }
+    &.fb-border-right-5 {
+        border-right-width: 5px; 
+    }
+    &.fb-border-right-dotted {
+        border-right-style: dotted;
+    }
+    &.fb-border-right-dashed {
+        border-right-style: dashed;
+    }
+    &.fb-border-right-solid {
+        border-right-style: solid;
+    }
+    &.fb-border-right-double {
+        border-right-style: double;
+    }
+    &.fb-border-right-groove {
+        border-right-style: groove;
+    }
+    &.fb-border-right-ridge {
+        border-right-style: ridge;
+    }
+    &.fb-border-right-inset {
+        border-right-style: inset;
+    }
+    &.fb-border-right-outset {
+        border-right-style: outset;
+    }
+    &.fb-border-right-none {
+        border-right-style: none;
+    }
+    &.fb-border-right-hidden {
+        border-right-style: hidden;
+    }
+    &.fb-border-right-white {
+        border-right-color: white;
+    }
+    &.fb-border-right-black {
+        border-right-color: black;
+    }
+    &.fb-border-right-red {
+        border-right-color: red;
+    }
+    &.fb-border-right-light-red {
+        border-right-color: rgb(255, 120, 120);
+    }
+    &.fb-border-right-yellow {
+        border-right-color: yellow;
+    }
+    &.fb-border-right-light-yellow {
+        border-right-color: lightyellow;
+    }
+    &.fb-border-right-green {
+        border-right-color: green;
+    }
+    &.fb-border-right-light-green {
+        border-right-color: lightgreen;
+    }
+    &.fb-border-right-blue {
+        border-right-color: blue;
+    }
+    &.fb-border-right-light-blue {
+        border-right-color: lightblue;
+    }
+    &.fb-border-right-gray {
+        border-right-color: gray;
+    }
+    &.fb-border-right-light-gray {
+        border-right-color: lightgray;
+    }
+    &.fb-border-right-grey {
+        border-right-color: grey;
+    }
+    &.fb-border-right-light-grey {
+        border-right-color: lightgrey;
+    }
+    /* BORDER BOTTOM */
+    &.fb-border-bottom-1 {
+        border-bottom-width: 1px;
+    }
+    &.fb-border-bottom-2 {
+        border-bottom-width: 2px;
+    }
+    &.fb-border-bottom-3 {
+        border-bottom-width: 3px;
+    }
+    &.fb-border-bottom-4 {
+        border-bottom-width: 4px;
+    }
+    &.fb-border-bottom-5 {
+        border-bottom-width: 5px; 
+    }
+    &.fb-border-bottom-dotted {
+        border-bottom-style: dotted;
+    }
+    &.fb-border-bottom-dashed {
+        border-bottom-style: dashed;
+    }
+    &.fb-border-bottom-solid {
+        border-bottom-style: solid;
+    }
+    &.fb-border-bottom-double {
+        border-bottom-style: double;
+    }
+    &.fb-border-bottom-groove {
+        border-bottom-style: groove;
+    }
+    &.fb-border-bottom-ridge {
+        border-bottom-style: ridge;
+    }
+    &.fb-border-bottom-inset {
+        border-bottom-style: inset;
+    }
+    &.fb-border-bottom-outset {
+        border-bottom-style: outset;
+    }
+    &.fb-border-bottom-none {
+        border-bottom-style: none;
+    }
+    &.fb-border-bottom-hidden {
+        border-bottom-style: hidden;
+    }
+    &.fb-border-bottom-white {
+        border-bottom-color: white;
+    }
+    &.fb-border-bottom-black {
+        border-bottom-color: black;
+    }
+    &.fb-border-bottom-red {
+        border-bottom-color: red;
+    }
+    &.fb-border-bottom-light-red {
+        border-bottom-color: rgb(255, 120, 120);
+    }
+    &.fb-border-bottom-yellow {
+        border-bottom-color: yellow;
+    }
+    &.fb-border-bottom-light-yellow {
+        border-bottom-color: lightyellow;
+    }
+    &.fb-border-bottom-green {
+        border-bottom-color: green;
+    }
+    &.fb-border-bottom-light-green {
+        border-bottom-color: lightgreen;
+    }
+    &.fb-border-bottom-blue {
+        border-bottom-color: blue;
+    }
+    &.fb-border-bottom-light-blue {
+        border-bottom-color: lightblue;
+    }
+    &.fb-border-bottom-gray {
+        border-bottom-color: gray;
+    }
+    &.fb-border-bottom-light-gray {
+        border-bottom-color: lightgray;
+    }
+    &.fb-border-bottom-grey {
+        border-bottom-color: grey;
+    }
+    &.fb-border-bottom-light-grey {
+        border-bottom-color: lightgrey;
+    }
+    /* BORDER LEFT */
+    &.fb-border-left-1 {
+        border-left-width: 1px;
+    }
+    &.fb-border-left-2 {
+        border-left-width: 2px;
+    }
+    &.fb-border-left-3 {
+        border-left-width: 3px;
+    }
+    &.fb-border-left-4 {
+        border-left-width: 4px;
+    }
+    &.fb-border-left-5 {
+        border-left-width: 5px; 
+    }
+    &.fb-border-left-dotted {
+        border-left-style: dotted;
+    }
+    &.fb-border-left-dashed {
+        border-left-style: dashed;
+    }
+    &.fb-border-left-solid {
+        border-left-style: solid;
+    }
+    &.fb-border-left-double {
+        border-left-style: double;
+    }
+    &.fb-border-left-groove {
+        border-left-style: groove;
+    }
+    &.fb-border-left-ridge {
+        border-left-style: ridge;
+    }
+    &.fb-border-left-inset {
+        border-left-style: inset;
+    }
+    &.fb-border-left-outset {
+        border-left-style: outset;
+    }
+    &.fb-border-left-none {
+        border-left-style: none;
+    }
+    &.fb-border-left-hidden {
+        border-left-style: hidden;
+    }
+    &.fb-border-left-white {
+        border-left-color: white;
+    }
+    &.fb-border-left-black {
+        border-left-color: black;
+    }
+    &.fb-border-left-red {
+        border-left-color: red;
+    }
+    &.fb-border-left-light-red {
+        border-left-color: rgb(255, 120, 120);
+    }
+    &.fb-border-left-yellow {
+        border-left-color: yellow;
+    }
+    &.fb-border-left-light-yellow {
+        border-left-color: lightyellow;
+    }
+    &.fb-border-left-green {
+        border-left-color: green;
+    }
+    &.fb-border-left-light-green {
+        border-left-color: lightgreen;
+    }
+    &.fb-border-left-blue {
+        border-left-color: blue;
+    }
+    &.fb-border-left-light-blue {
+        border-left-color: lightblue;
+    }
+    &.fb-border-left-gray {
+        border-left-color: gray;
+    }
+    &.fb-border-left-light-gray {
+        border-left-color: lightgray;
+    }
+    &.fb-border-left-grey {
+        border-left-color: grey;
+    }
+    &.fb-border-left-light-grey {
+        border-left-color: lightgrey;
+    }
+
+    /* BORDER HORIZONTAL */
+    &.fb-border-horizontal-1 {
+        border-left-width: 1px;
+        border-right-width: 1px;
+    }
+    &.fb-border-horizontal-2 {
+        border-left-width: 2px;
+        border-right-width: 2px;
+    }
+    &.fb-border-horizontal-3 {
+        border-left-width: 3px;
+        border-right-width: 3px;
+    }
+    &.fb-border-horizontal-4 {
+        border-left-width: 4px;
+        border-right-width: 4px;
+    }
+    &.fb-border-horizontal-5 {
+        border-left-width: 5px;
+        border-right-width: 5px; 
+    }
+    &.fb-border-horizontal-dotted {
+        border-left-style: dotted;
+        border-right-style: dotted;
+    }
+    &.fb-border-horizontal-dashed {
+        border-left-style: dashed;
+        border-right-style: dashed;
+    }
+    &.fb-border-horizontal-solid {
+        border-left-style: solid;
+        border-right-style: solid;
+    }
+    &.fb-border-horizontal-double {
+        border-left-style: double;
+        border-right-style: double;
+    }
+    &.fb-border-horizontal-groove {
+        border-left-style: groove;
+        border-right-style: groove;
+    }
+    &.fb-border-horizontal-ridge {
+        border-left-style: ridge;
+        border-right-style: ridge;
+    }
+    &.fb-border-horizontal-inset {
+        border-left-style: inset;
+        border-right-style: inset;
+    }
+    &.fb-border-horizontal-outset {
+        border-left-style: outset;
+        border-right-style: outset;
+    }
+    &.fb-border-horizontal-none {
+        border-left-style: none;
+        border-right-style: none;
+    }
+    &.fb-border-horizontal-hidden {
+        border-left-style: hidden;
+        border-right-style: hidden;
+    }
+    &.fb-border-horizontal-white {
+        border-left-color: white;
+        border-right-color: white;
+    }
+    &.fb-border-horizontal-black {
+        border-left-color: black;
+        border-right-color: black;
+    }
+    &.fb-border-horizontal-red {
+        border-left-color: red;
+        border-right-color: red;
+    }
+    &.fb-border-horizontal-light-red {
+        border-left-color: rgb(255, 120, 120);
+        border-right-color: rgb(255, 120, 120);
+    }
+    &.fb-border-horizontal-yellow {
+        border-left-color: yellow;
+        border-right-color: yellow;
+    }
+    &.fb-border-horizontal-light-yellow {
+        border-left-color: lightyellow;
+        border-right-color: lightyellow;
+    }
+    &.fb-border-horizontal-green {
+        border-left-color: green;
+        border-right-color: green;
+    }
+    &.fb-border-horizontal-light-green {
+        border-left-color: lightgreen;
+        border-right-color: lightgreen;
+    }
+    &.fb-border-horizontal-blue {
+        border-left-color: blue;
+        border-right-color: blue;
+    }
+    &.fb-border-horizontal-light-blue {
+        border-left-color: lightblue;
+        border-right-color: lightblue;
+    }
+    &.fb-border-horizontal-gray {
+        border-left-color: gray;
+        border-right-color: gray;
+    }
+    &.fb-border-horizontal-light-gray {
+        border-left-color: lightgray;
+        border-right-color: lightgray;
+    }
+    &.fb-border-horizontal-grey {
+        border-left-color: grey;
+        border-right-color: grey;
+    }
+    &.fb-border-horizontal-light-grey {
+        border-left-color: lightgrey;
+        border-right-color: lightgrey;
+    }
+
+    /* BORDER VERTICAL */
+    &.fb-border-vertical-1 {
+        border-top-width: 1px;
+        border-bottom-width: 1px;
+    }
+    &.fb-border-vertical-2 {
+        border-top-width: 2px;
+        border-bottom-width: 2px;
+    }
+    &.fb-border-vertical-3 {
+        border-top-width: 3px;
+        border-bottom-width: 3px;
+    }
+    &.fb-border-vertical-4 {
+        border-top-width: 4px;
+        border-bottom-width: 4px;
+    }
+    &.fb-border-vertical-5 {
+        border-top-width: 5px;
+        border-bottom-width: 5px; 
+    }
+    &.fb-border-vertical-dotted {
+        border-top-style: dotted;
+        border-bottom-style: dotted;
+    }
+    &.fb-border-vertical-dashed {
+        border-top-style: dashed;
+        border-bottom-style: dashed;
+    }
+    &.fb-border-vertical-solid {
+        border-top-style: solid;
+        border-bottom-style: solid;
+    }
+    &.fb-border-vertical-double {
+        border-top-style: double;
+        border-bottom-style: double;
+    }
+    &.fb-border-vertical-groove {
+        border-top-style: groove;
+        border-bottom-style: groove;
+    }
+    &.fb-border-vertical-ridge {
+        border-top-style: ridge;
+        border-bottom-style: ridge;
+    }
+    &.fb-border-vertical-inset {
+        border-top-style: inset;
+        border-bottom-style: inset;
+    }
+    &.fb-border-vertical-outset {
+        border-top-style: outset;
+        border-bottom-style: outset;
+    }
+    &.fb-border-vertical-none {
+        border-top-style: none;
+        border-bottom-style: none;
+    }
+    &.fb-border-vertical-hidden {
+        border-top-style: hidden;
+        border-bottom-style: hidden;
+    }
+    &.fb-border-vertical-white {
+        border-top-color: white;
+        border-bottom-color: white;
+    }
+    &.fb-border-vertical-black {
+        border-top-color: black;
+        border-bottom-color: black;
+    }
+    &.fb-border-vertical-red {
+        border-top-color: red;
+        border-bottom-color: red;
+    }
+    &.fb-border-vertical-light-red {
+        border-top-color: rgb(255, 120, 120);
+        border-bottom-color: rgb(255, 120, 120);
+    }
+    &.fb-border-vertical-yellow {
+        border-top-color: yellow;
+        border-bottom-color: yellow;
+    }
+    &.fb-border-vertical-light-yellow {
+        border-top-color: lightyellow;
+        border-bottom-color: lightyellow;
+    }
+    &.fb-border-vertical-green {
+        border-top-color: green;
+        border-bottom-color: green;
+    }
+    &.fb-border-vertical-light-green {
+        border-top-color: lightgreen;
+        border-bottom-color: lightgreen;
+    }
+    &.fb-border-vertical-blue {
+        border-top-color: blue;
+        border-bottom-color: blue;
+    }
+    &.fb-border-vertical-light-blue {
+        border-top-color: lightblue;
+        border-bottom-color: lightblue;
+    }
+    &.fb-border-vertical-gray {
+        border-top-color: gray;
+        border-bottom-color: gray;
+    }
+    &.fb-border-vertical-light-gray {
+        border-top-color: lightgray;
+        border-bottom-color: lightgray;
+    }
+    &.fb-border-vertical-grey {
+        border-top-color: grey;
+        border-bottom-color: grey;
+    }
+    &.fb-border-vertical-light-grey {
+        border-top-color: lightgrey;
+        border-bottom-color: lightgrey;
+    }
+}
