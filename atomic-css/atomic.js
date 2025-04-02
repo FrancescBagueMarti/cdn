@@ -1,5 +1,6 @@
 /* es un proyecto solo para jugar con jquery, los atributos html y con css es totalmente obsoleto y solo lo utilizare para pruevas 
 attributes in working:
+    · images for [background] and [background-image]
     · all flex related attributes
     · all grid related attributes
     · others
