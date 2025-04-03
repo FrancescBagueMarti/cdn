@@ -1,13 +1,14 @@
 /* es un proyecto solo para jugar con jquery, los atributos html y con css es totalmente obsoleto y solo lo utilizare para pruevas 
 attributes in working:
-    · images for [background] and [background-image]
-    · all flex related attributes
-    · all grid related attributes
+    · background images
+    · some flex related styles
+    · all grid related styles
     · others
 */
 import "https://code.jquery.com/jquery-3.7.1.slim.min.js"
 
-$("[border]").each(function() {$(this).css("border", $(this).attr("border"))})
+// $("[border]").each(function() {$(this).css("border", $(this).attr("border"))})
+$("[border]").each(function(){let t=$(this).attr("border").split(",");1===t.length?$(this).css("border",t[0]):2===t.length?($(this).css("border-top",t[0]),$(this).css("border-bottom",t[0]),$(this).css("border-left",t[1]),$(this).css("border-right",t[1])):3===t.length?($(this).css("border-top",t[0]),$(this).css("border-left",t[1]),$(this).css("border-right",t[1]),$(this).css("border-bottom",t[2])):4===t.length?($(this).css("border-top",t[0]),$(this).css("border-right",t[1]),$(this).css("border-bottom",t[2]),$(this).css("border-left",t[3])):($(this).css("border-top",t[0]),$(this).css("border-right",t[1]),$(this).css("border-bottom",t[2]),$(this).css("border-left",t[3]),console.warn("attribute [border] only accepts to a maximum of 4 values, if there are more than 4, they will be ignored","\n",$(this).get(0)))});
 $("[border-top]").each(function() {$(this).css("border-top", $(this).attr("border-top"))})
 $("[border-right]").each(function() {$(this).css("border-right", $(this).attr("border-right"))})
 $("[border-bottom]").each(function() {$(this).css("border-bottom", $(this).attr("border-bottom"))})
@@ -79,3 +80,8 @@ $("[right]").each(function() {$(this).css("right", $(this).attr("right"))})
 $("[center]").each(function(){let t=$(this).attr("center");"vertical"===t?$(this).css("top","50%"):"horizontal"===t?$(this).css("left","50%"):"both"===t?$(this).css("left","50%").css("top","50%"):"true"===t?$(this).css("left","50%").css("top","50%").css("transform","translateX(-50%) translateY(-50%)"):console.error(t+" is not a valid value for attribute [center]","\n",$(this).get(0))});
 
 $("[transform]").each(function() {$(this).css("transform", $(this).attr("transform"))})
+
+
+$("[flex]").each(function(){let s=String($(this).attr("flex")).split(" ");s.includes("inline")?$(this).css("display","inline-flex"):$(this).css("display","flex"),s.forEach(s=>{["column","column-reverse","row","row-reverse"].includes(s)?$(this).css("flex-direction",s):["wrap","no-wrap"].includes(s)&&$(this).css("flex-wrap",s)});console.warn("attribute [flex] will only use the last values inserted in the attribute, for example if [flex] is flex=\"row column\", it will only use column","\n",$(this).get(0))});
+$("[justify-content]").each(function(){$(this).css("justify-content",$(this).attr("justify-content"))})
+$("[align-items]").each(function(){$(this).css("align-items",$(this).attr("align-items"))})
