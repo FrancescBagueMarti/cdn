@@ -43,7 +43,7 @@ $("[padding-vertical]").each(function(){$(this).css("padding-top",$(this).attr("
 $("[padding-horizontal]").each(function(){$(this).css("padding-left",$(this).attr("padding-horizontal"));$(this).css("padding-right",$(this).attr("padding-horizontal"))})
 
 // $("[background]").each(function(){$(this).css("background",$(this).attr("background")),/\.(jpeg|jpg|png|gif|webp)$/i.test($(this).attr("background"))&&console.warn("attribute [background] does't accept images yet","\n",$(this).get(0))});
-// $("[background-color]").each(function() {$(this).css("background-color", $(this).attr("background-color"))})
+$("[background-color]").each(function() {$(this).css("background-color", $(this).attr("background-color"))})
 // $("[background-image]").each(function() {$(this).css("background-image", $(this).attr("background-image")); console.warn("attribute [background-image] does't accept images yet","\n", $(this).get(0))})
 // $("[background-position]").each(function() {$(this).css("background-position", $(this).attr("background-position"))})
 // $("[background-repeat]").each(function() {$(this).css("background-repeat", $(this).attr("background-repeat"))})
