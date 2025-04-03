@@ -1,6 +1,7 @@
 /* es un proyecto solo para jugar con jquery, los atributos html y con css es totalmente obsoleto y solo lo utilizare para pruevas 
-attributes in working:
-    · background images
+   esta version requiere el uso de jquery para poder funcionar
+   attributes in working:
+    · background attributes don't work propperly
     · some flex related styles
     · all grid related styles
     · others
@@ -41,11 +42,11 @@ $("[padding-left]").each(function() {$(this).css("padding-left", $(this).attr("p
 $("[padding-vertical]").each(function(){$(this).css("padding-top",$(this).attr("padding-vertical"));$(this).css("padding-bottom",$(this).attr("padding-vertical"))})
 $("[padding-horizontal]").each(function(){$(this).css("padding-left",$(this).attr("padding-horizontal"));$(this).css("padding-right",$(this).attr("padding-horizontal"))})
 
-$("[background]").css("background", $("[background]").attr("background")).each(function(){if(/\.(jpeg|jpg|png|gif|webp)$/i.test($(this).attr("background"))) {console.warn("attribute [background] does't accept images properly yet", "\n", $(this).get(0));}});
-$("[background-color]").each(function() {$(this).css("background-color", $(this).attr("background-color"))})
-$("[background-image]").css("background-image", $("[background-image]").attr("background-image")).each(function(){console.warn("attribute [background-image] does't accept images properly yet", "\n", $(this).get(0));})
-$("[background-position]").each(function() {$(this).css("background-position", $(this).attr("background-position"))})
-$("[background-repeat]").each(function() {$(this).css("background-repeat", $(this).attr("background-repeat"))})
+// $("[background]").each(function(){$(this).css("background",$(this).attr("background")),/\.(jpeg|jpg|png|gif|webp)$/i.test($(this).attr("background"))&&console.warn("attribute [background] does't accept images yet","\n",$(this).get(0))});
+// $("[background-color]").each(function() {$(this).css("background-color", $(this).attr("background-color"))})
+// $("[background-image]").each(function() {$(this).css("background-image", $(this).attr("background-image")); console.warn("attribute [background-image] does't accept images yet","\n", $(this).get(0))})
+// $("[background-position]").each(function() {$(this).css("background-position", $(this).attr("background-position"))})
+// $("[background-repeat]").each(function() {$(this).css("background-repeat", $(this).attr("background-repeat"))})
 
 $("[border-radius]").each(function() {$(this).css("border-radius", $(this).attr("border-radius"))})
 $("[border-top-left-radius]").each(function() {$(this).css("border-top-left-radius", $(this).attr("border-top-left-radius"))})
@@ -84,8 +85,8 @@ $("[left]").each(function() {$(this).css("left", $(this).attr("left"))})
 $("[right]").each(function() {$(this).css("right", $(this).attr("right"))})
 $("[center]").each(function(){let t=$(this).attr("center");"vertical"===t?$(this).css("top","50%"):"horizontal"===t?$(this).css("left","50%"):"both"===t?$(this).css("left","50%").css("top","50%"):"true"===t?$(this).css("left","50%").css("top","50%").css("transform","translateX(-50%) translateY(-50%)"):console.error(t+" is not a valid value for attribute [center]","\n",$(this).get(0))});
 
-$("[relative]").each(function(){$(this).css("position","relative");let t=$(this).attr("relative").trimStart().split(" ");1===t.length&&("top"==t[0]?$(this).css("top","0%"):"bottom"==String(t[0]).toLowerCase()?$(this).css("bottom","0%"):"left"==String(t[0]).toLowerCase()?$(this).css("left","0%"):"right"==String(t[0]).toLowerCase()?$(this).css("right","0%"):"center"==String(t[0]).toLowerCase()&&$(this).css("top",`calc(50% - ${Number($(this).height())/2}px)`).css("left",`calc(50% - ${Number($(this).width())/2}px)`)),2===t.length&&("top"==t[0]?$(this).css("top","0%"):"bottom"==String(t[0]).toLowerCase()?$(this).css("bottom","0%"):"left"==String(t[0]).toLowerCase()?$(this).css("left","0%"):"right"==String(t[0]).toLowerCase()?$(this).css("right","0%"):"center"==String(t[0]).toLowerCase()&&$(this).css("top",`calc(50% - ${Number($(this).height())/2}px)`),"top"==t[1]?$(this).css("top","0%"):"bottom"==String(t[1]).toLowerCase()?$(this).css("bottom","0%"):"left"==String(t[1]).toLowerCase()?$(this).css("left","0%"):"right"==String(t[1]).toLowerCase()?$(this).css("right","0%"):"center"==String(t[1]).toLowerCase()&&$(this).css("left",`calc(50% - ${Number($(this).width())/2}px)`))});
-$("[absolute]").each(function(){$(this).css("position","absolute");let t=$(this).attr("absolute").trimStart().split(" ");1===t.length&&("top"==t[0]?$(this).css("top","0%"):"bottom"==String(t[0]).toLowerCase()?$(this).css("bottom","0%"):"left"==String(t[0]).toLowerCase()?$(this).css("left","0%"):"right"==String(t[0]).toLowerCase()?$(this).css("right","0%"):"center"==String(t[0]).toLowerCase()&&$(this).css("top",`calc(50% - ${Number($(this).height())/2}px)`).css("left",`calc(50% - ${Number($(this).width())/2}px)`)),2===t.length&&("top"==t[0]?$(this).css("top","0%"):"bottom"==String(t[0]).toLowerCase()?$(this).css("bottom","0%"):"left"==String(t[0]).toLowerCase()?$(this).css("left","0%"):"right"==String(t[0]).toLowerCase()?$(this).css("right","0%"):"center"==String(t[0]).toLowerCase()&&$(this).css("top",`calc(50% - ${Number($(this).height())/2}px)`),"top"==t[1]?$(this).css("top","0%"):"bottom"==String(t[1]).toLowerCase()?$(this).css("bottom","0%"):"left"==String(t[1]).toLowerCase()?$(this).css("left","0%"):"right"==String(t[1]).toLowerCase()?$(this).css("right","0%"):"center"==String(t[1]).toLowerCase()&&$(this).css("left",`calc(50% - ${Number($(this).width())/2}px)`))});
+$("[relative]").each(function(){$(this).css("position","relative");let t=$(this).attr("relative").trimStart().split(" ");1===t.length?"top"==t[0]?$(this).css("top","0%"):"bottom"==String(t[0]).toLowerCase()?$(this).css("bottom","0%"):"left"==String(t[0]).toLowerCase()?$(this).css("left","0%"):"right"==String(t[0]).toLowerCase()?$(this).css("right","0%"):"center"==String(t[0]).toLowerCase()&&$(this).css("top",`calc(50% - ${Number($(this).height())/2}px)`).css("left",`calc(50% - ${Number($(this).width())/2}px)`):2===t.length&&("top"==t[0]?$(this).css("top","0%"):"bottom"==String(t[0]).toLowerCase()?$(this).css("bottom","0%"):"left"==String(t[0]).toLowerCase()?$(this).css("left","0%"):"right"==String(t[0]).toLowerCase()?$(this).css("right","0%"):"center"==String(t[0]).toLowerCase()&&$(this).css("top",`calc(50% - ${Number($(this).height())/2}px)`),"top"==t[1]?$(this).css("top","0%"):"bottom"==String(t[1]).toLowerCase()?$(this).css("bottom","0%"):"left"==String(t[1]).toLowerCase()?$(this).css("left","0%"):"right"==String(t[1]).toLowerCase()?$(this).css("right","0%"):"center"==String(t[1]).toLowerCase()&&$(this).css("left",`calc(50% - ${Number($(this).width())/2}px)`))});
+$("[absolute]").each(function(){$(this).css("position","absolute");let t=$(this).attr("absolute").trimStart().split(" ");1===t.length?"top"==t[0]?$(this).css("top","0%"):"bottom"==String(t[0]).toLowerCase()?$(this).css("bottom","0%"):"left"==String(t[0]).toLowerCase()?$(this).css("left","0%"):"right"==String(t[0]).toLowerCase()?$(this).css("right","0%"):"center"==String(t[0]).toLowerCase()&&$(this).css("top",`calc(50% - ${Number($(this).height())/2}px)`).css("left",`calc(50% - ${Number($(this).width())/2}px)`):2===t.length&&("top"==t[0]?$(this).css("top","0%"):"bottom"==String(t[0]).toLowerCase()?$(this).css("bottom","0%"):"left"==String(t[0]).toLowerCase()?$(this).css("left","0%"):"right"==String(t[0]).toLowerCase()?$(this).css("right","0%"):"center"==String(t[0]).toLowerCase()&&$(this).css("top",`calc(50% - ${Number($(this).height())/2}px)`),"top"==t[1]?$(this).css("top","0%"):"bottom"==String(t[1]).toLowerCase()?$(this).css("bottom","0%"):"left"==String(t[1]).toLowerCase()?$(this).css("left","0%"):"right"==String(t[1]).toLowerCase()?$(this).css("right","0%"):"center"==String(t[1]).toLowerCase()&&$(this).css("left",`calc(50% - ${Number($(this).width())/2}px)`))});
 
 $("[transform]").each(function() {$(this).css("transform", $(this).attr("transform"))})
 
@@ -93,6 +94,11 @@ $("[flex]").each(function(){let s=String($(this).attr("flex")).split(" ");s.incl
 $("[justify-content]").each(function(){$(this).css("justify-content",$(this).attr("justify-content"))})
 $("[align-items]").each(function(){$(this).css("align-items",$(this).attr("align-items"))})
 
-$("[vertical-align]").css("vertical-align",$("[vertical-align]").attr("vertical-align"))
+$("[vertical-align]").each(function() {$(this).css("vertical-align",$(this).attr("vertical-align"))})
 
-$("img[fit]").css("object-fit",$("img[fit]").attr("fit"))
+$("img[fit]").each(function() {$(this).css("object-fit",$(this).attr("fit"))})
+
+$("[grid-columns]").each(function() {$(this).css("grid-template-columns", $(this).attr("grid-columns"))})
+$("[grid-rows]").each(function() {$(this).css("grid-template-rows",$(this).attr("grid-rows"))})
+$("[grid-gap]").each(function() {$(this).css("grid-gap",$(this).attr("grid-gap"))})
+$("[grid-area]").each(function() {$(this).css("grid-area",$(this).attr("grid-area"))})
