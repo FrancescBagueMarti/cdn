@@ -1,18 +1,3 @@
-<style>
-    .example {
-        border: 1px solid black;
-        background-color: white;
-        color: black;
-        padding: 10px;
-        margin: 15px 0;
-    }
-    span[tag] {
-        color: red;
-    }
-    span[attr] {
-        color: green
-    }
-</style>
 # Atomic.js
 
 Atomic js es un pequeño proyecto que permite definir estilos css al escribir-los directamente en el html como atributos.
