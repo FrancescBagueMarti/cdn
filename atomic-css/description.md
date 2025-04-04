@@ -1,3 +1,4 @@
+<svg>
 <style>
     .example {
         border: 1px solid black;
@@ -13,6 +14,7 @@
         color: green
     }
 </style>
+
 # Atomic.js
 
 Atomic js es un pequeño proyecto que permite definir estilos css al escribir-los directamente en el html como atributos.
@@ -275,3 +277,4 @@ Estos son atributos de estilos varios que no forman parte de ninguna categoria e
     &lt;<span tag>p</span> <span attr>text-shadow</span>="red"  &gt;Hola Mundo&lt\<span tag>p</span>&gt;
 </div>
 <!-- <span attr></span>  -->
+</svg>
