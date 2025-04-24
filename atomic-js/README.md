@@ -17,6 +17,7 @@ Atomic js es un pequeño proyecto que permite definir estilos css al escribir-lo
 - [Absolute](#absolute)
 - [Flex](#flex)
 - [Grid](#grid)
+- [Gradient](#gradients)
 - [Varios](#varios)
 
 <hr>
@@ -197,14 +198,32 @@ Las variaciones de grid son:
     <article style="border: 1px solid black" grid-area=""><article>
     <article style="border: 1px solid black" grid-area=""><article>
 </div>
-
 ```
 
-<hr>
+### Gradients
+Varios atributos que definen gradientes en el background del elemento
+
+#### &emsp;gradient
+&emsp;Atributo general para definir los valores
+```html
+<div gradient="linear/to right, black, white"></div>
+<div gradient="radial/at center, black, white"></div>
+```
+#### &emsp;linear-gradient
+&emsp;Define un linear-gradient
+```html
+<div linear-gradient="to right, black, white"></div>
+```
+#### &emsp;radial-gradient
+&emsp;Define un radial-gradient
+```html
+<div radial-gradient="at center, black, white"></div>
+```
 
 ## Varios
 Estos son atributos de estilos varios que no forman parte de ninguna categoria en concreto
 ### &emsp;transform
+
 ```html
 <div transform="scaleX(-1)"><div>
 ```
@@ -246,7 +265,7 @@ Estos son atributos de estilos varios que no forman parte de ninguna categoria e
 <p text-border="red">Hola Mundo</p>
 ```
 
-### &emsp;text-border
+### &emsp;text-shadow
 &emsp;&emsp;<span style="color: gray;">Si se utliza a la vez que [text-border] solo se aplicara el valor del ultimo añadido en la etiqueta html</span>
 ```html
 <p text-shadow="red">Hola Mundo</p>
