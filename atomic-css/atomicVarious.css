@@ -1,0 +1,196 @@
+.fb-relative,
+.relative {
+    position: relative;
+
+    &.fb-top,
+    &.top {
+        top: 0;
+    }
+    &.fb-left,
+    &.left,
+    &.start {
+        left: 0;
+    }
+    &.fb-right,
+    &.right,
+    &.end {
+        right: 0;
+    }
+    &.fb-bottom,
+    &.bototm {
+        bottom: 0;
+    }
+    &.fb-center,
+    &.center {
+      top: 50%;
+      left: 50%;
+      transform: translatex(-50%) translatey(-50%);
+    }
+    &.fb-center-horizontal,
+    &.centerHorizontal {
+      left: 50%;
+      transform: translatex(-50%);
+    }
+    &.fb-center-vertical,
+    &.centerVertical {
+      top: 50%;
+      transform:translatey(-50%);
+    }
+}
+.fb-absolute,
+.absolute {
+    position: absolute;
+
+    &.fb-top,
+    &.top {
+        top: 0;
+    }
+    &.fb-left,
+    &.left,
+    &.start {
+        left: 0;
+    }
+    &.fb-right,
+    &.right,
+    &.end {
+        right: 0;
+    }
+    &.fb-bottom,
+    &.bototm {
+        bottom: 0;
+    }
+    &.fb-center,
+    &.center {
+      top: 50%;
+      left: 50%;
+      transform: translatex(-50%) translatey(-50%);
+    }
+    &.fb-center-horizontal,
+    &.centerHorizontal {
+      left: 50%;
+      transform: translatex(-50%);
+    }
+    &.fb-center-vertical,
+    &.centerVertical {
+      top: 50%;
+      transform:translatey(-50%);
+    }
+}
+.fb-flex,
+.fb-inline-flex,
+.flex,
+.inlineFlex {
+    &.fb-flex,
+    &.flex {
+        display: flex;
+    }
+    &.fb-inline-flex,
+    &.inlineFlex {
+        display: inline-flex;
+    }
+    &.fb-flex-direction-unset,
+    &.flexDirectionUnset {
+        flex-direction: unset;
+    }
+    &.fb-center-content,
+    &.centerContent {
+        justify-content: center;
+        align-items: center;
+    }
+    &.fb-flex-row,
+    &.flexRow {
+        flex-direction: row;
+    }
+    &.fb-flex-row-reverse,
+    &.flexRowReverse {
+        flex-direction: row-reverse;
+    }
+    &.fb-flex-column,
+    &.flexColumn {
+        flex-direction: column;
+    }
+    &.fb-flex-column-reverse,
+    &.flexColumnReverse {
+        flex-direction: column-reverse;
+    }
+    &.fb-flex-wrap,
+    &.flexWrap {
+        flex-wrap: wrap;
+    }
+    &.fb-flex-wrap-reverse,
+    &.flexWrapReverse {
+        flex-wrap: wrap-reverse;
+    }
+    &.fb-flex-wrap-no,
+    &.flexWrapNo {
+        flex-wrap: nowrap;
+    }
+    &.fb-flex-wrap-unset,
+    &.flexWrapUnset {
+        flex-wrap: unset;
+    }
+    &.fb-justify-start,
+    &.justifyStart {
+        justify-content: flex-start;
+    }
+    &.fb-justify-center,
+    &.justifyCenter {
+        justify-content: center;
+    }
+    &.fb-justify-end,
+    &.justifyEnd {
+        justify-content: flex-end;
+    }
+    &.fb-justify-around,
+    &.justifyAround {
+        justify-content: space-around;
+    }
+    &.fb-justify-between,
+    &.justifyBetween {
+        justify-content: space-between;
+    }
+    &.fb-justify-evenly,
+    &.justifyEvenly {
+        justify-content: space-evenly;
+    }
+    &.fb-align-start,
+    &.alignStart {
+        align-items: start;
+    }
+    &.fb-align-center,
+    &.alignCenter {
+        align-items: center;
+    }
+    &.fb-align-end,
+    &.alignEnd {
+        align-items: end;
+    }
+}
+.fb-text-left,
+.textLeft {
+    text-align: left;
+}
+.fb-text-start,
+.testStart {
+    text-align: start;
+}
+.fb-text-center,
+.textCenter {
+    text-align: center;
+}
+.fb-text-right,
+.textRight {
+    text-align: right;
+}
+.fb-text-end,
+.textEnd {
+    text-align: end;
+}
+.fb-text-justify,
+.textJustify {
+    text-align: justify;
+}
+.fb-shadow-arround,
+.shadowArround {
+    box-shadow: 3px 3px 4px black, 3px -3px 4px black, -3px 3px 4px black, -3px -3px 4px black;
+}

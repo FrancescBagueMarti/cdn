@@ -1,0 +1,38 @@
+button,
+.button {
+    cursor: pointer;
+    transition: .3s;
+    border: 2px inset white;
+    padding: 5px 10px;
+    font-size: 15px;
+    border-radius: 10px;
+}
+table,
+.table {
+    border-collapse: collapse;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    td,th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+    }
+    tbody > tr:nth-of-type(odd) {
+        td {
+            background-color: #dddddd;
+            &:not(:first-child):not(:last-child) {
+                border-color: #dddddd white;
+            }
+            &:first-child {
+                border-color: #dddddd white #dddddd #dddddd
+            }
+        }
+    }
+}
+input,
+.input {
+    padding: 5px;
+    &.centered {
+        text-align: center;
+    }
+}
